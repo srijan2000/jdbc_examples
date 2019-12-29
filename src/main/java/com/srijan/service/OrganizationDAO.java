@@ -1,12 +1,15 @@
 package com.srijan.service;
 
 import java.sql.*;
+import java.util.Calendar;
+import java.util.Date;
 
 public class OrganizationDAO {
 
+    //fetching records
     public void display(){
         MySqlDBConnection mySqlDBConnection = new MySqlDBConnection();
-        Connection connection = mySqlDBConnection.getDBConnectio();
+        Connection connection = mySqlDBConnection.getDBConnection();
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("select * from organization");
@@ -21,10 +24,11 @@ public class OrganizationDAO {
         }
     }
 
+    //inserting records
     public void addOrganization(String orgName, String desc){
         String sqlInsert = "insert into organization (org_name, description) values(?, ?)";
         MySqlDBConnection mySqlDBConnection = new MySqlDBConnection();
-        Connection connection = mySqlDBConnection.getDBConnectio();
+        Connection connection = mySqlDBConnection.getDBConnection();
         try {
             connection.setAutoCommit(false);
             PreparedStatement ps = connection.prepareStatement(sqlInsert);
@@ -38,9 +42,61 @@ public class OrganizationDAO {
         }
     }
 
+    //updating records
+    public void updateOrganization(int id, String orgName, String desc){
+
+        String sqlUpdate = "update organization set org_name = ?, description = ?, modified_at = ? where id = ?";
+        MySqlDBConnection mySqlDBConnection = new MySqlDBConnection();
+        Connection connection = mySqlDBConnection.getDBConnection();
+        try {
+
+            connection.setAutoCommit(false);
+            PreparedStatement preparedStatement = connection.prepareStatement(sqlUpdate);
+            preparedStatement.setString(1,orgName);
+            preparedStatement.setString(2, desc);
+
+            Calendar calendar = Calendar.getInstance();
+            Date date = calendar.getTime();
+            java.sql.Date sqlDate = new java.sql.Date(date.getTime());
+            preparedStatement.setDate(3, sqlDate);
+
+            preparedStatement.setInt(4, id);
+            preparedStatement.execute();
+            connection.commit();
+
+        }catch (SQLException ex){
+            ex.printStackTrace();
+        }
+
+    }
+
+    //deleting records
+    public void deleteOrgnization(int id){
+        String sqlDelete = "delete from organization where id = ?";
+        MySqlDBConnection mySqlDBConnection = new MySqlDBConnection();
+        Connection connection = mySqlDBConnection.getDBConnection();
+        try {
+            connection.setAutoCommit(false);
+            PreparedStatement preparedStatement = connection.prepareStatement(sqlDelete);
+            preparedStatement.setInt(1, id);
+            preparedStatement.execute();
+            connection.commit();
+        }catch(SQLException ex){
+            ex.printStackTrace();
+        }
+    }
+
     public static void main(String[] args){
+        //CRUD ->
+        // Create, Retrieve, Update, Delete
         OrganizationDAO organizationDAO = new OrganizationDAO();
-        organizationDAO.addOrganization("OU College Store", "Sells tennis bats");
+        //insertion
+        //organizationDAO.addOrganization("OU College Store", "Sells tennis bats");
+        //update
+        //organizationDAO.updateOrganization(1,"Srijan Automobiles", "Sells BMW");
+        //deletion
+        //organizationDAO.deleteOrgnization(7);
+        //fetching
         organizationDAO.display();
     }
 }

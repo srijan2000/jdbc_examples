@@ -10,7 +10,7 @@ public class MySqlDBConnection {
     private static String username = "root";
     private static String password = "root";
 
-    public Connection getDBConnectio(){
+    public Connection getDBConnection(){
         //loading driver
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
