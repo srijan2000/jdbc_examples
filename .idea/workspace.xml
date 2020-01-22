@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="487f0f82-3efc-45af-b6f3-63d4b4bf230c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/srijan/client/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/srijan/client/ChatClient2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/srijan/server/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/srijan/server/ChatServer2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/srijan/service/MySqlDBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/srijan/service/MySqlDBConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/srijan/service/OrganizationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/srijan/service/OrganizationDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,65 +59,71 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
-  <component name="RunManager" selected="Application.SitesDAO">
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.srijan.HelloWorld" />
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.srijan.server" />
+      <recent name="com.srijan.client" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ChatClient2">
+    <configuration name="ChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.srijan.client.ChatClient" />
+      <module name="java_eg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.srijan.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatClient2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.srijan.client.ChatClient2" />
+      <module name="java_eg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.srijan.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.srijan.server.ChatServer" />
+      <module name="java_eg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.srijan.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatServer2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.srijan.server.ChatServer2" />
+      <module name="java_eg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.srijan.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.srijan.main" />
       <module name="java_eg" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.srijan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MySqlDbConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.srijan.MySqlDbConnector" />
-      <module name="java_eg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.srijan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrganizationDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.srijan.service.OrganizationDAO" />
-      <module name="java_eg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.srijan.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SitesDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.srijan.service.SitesDAO" />
-      <module name="java_eg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.srijan.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="organizationDAO1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.srijan.service.organizationDAO1" />
-      <module name="java_eg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.srijan.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SitesDAO" />
-        <item itemvalue="Application.organizationDAO1" />
-        <item itemvalue="Application.OrganizationDAO" />
-        <item itemvalue="Application.MySqlDbConnector" />
-        <item itemvalue="Application.HelloWorld" />
+        <item itemvalue="Application.ChatClient2" />
+        <item itemvalue="Application.ChatServer2" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.ChatClient" />
+        <item itemvalue="Application.ChatServer" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577621761151</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init commit">
+      <created>1579143195308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579143195308</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init commit">
+      <created>1579144548351</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579144548351</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,42 +208,42 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="535" y="190" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1707.920@0.0.1707.920" timestamp="1577364515183" />
-    <state x="510" y="56" key="CommitChangelistDialog2" timestamp="1577621760419">
+    <state x="510" y="56" key="CommitChangelistDialog2" timestamp="1579144547866">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="510" y="56" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1577621760419" />
+    <state x="510" y="56" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1579144547866" />
     <state x="663" y="253" key="FileChooserDialogImpl" timestamp="1576898580430">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="663" y="253" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1576898580430" />
-    <state width="1664" height="226" key="GridCell.Tab.0.bottom" timestamp="1578934575534">
+    <state width="1664" height="226" key="GridCell.Tab.0.bottom" timestamp="1579664540504">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="226" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1578934575534" />
-    <state width="1664" height="226" key="GridCell.Tab.0.center" timestamp="1578934575534">
+    <state width="1664" height="226" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1579664540504" />
+    <state width="1664" height="226" key="GridCell.Tab.0.center" timestamp="1579664540504">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="226" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1578934575534" />
-    <state width="1664" height="226" key="GridCell.Tab.0.left" timestamp="1578934575534">
+    <state width="1664" height="226" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1579664540504" />
+    <state width="1664" height="226" key="GridCell.Tab.0.left" timestamp="1579664540504">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="226" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1578934575534" />
-    <state width="1664" height="226" key="GridCell.Tab.0.right" timestamp="1578934575534">
+    <state width="1664" height="226" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1579664540504" />
+    <state width="1664" height="226" key="GridCell.Tab.0.right" timestamp="1579664540504">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="226" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1578934575534" />
+    <state width="1664" height="226" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1579664540504" />
     <state x="363" y="73" key="SettingsEditor" timestamp="1577508086854">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="363" y="73" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1577508086854" />
-    <state x="447" y="183" key="Vcs.Push.Dialog.v2" timestamp="1577621766693">
+    <state x="447" y="183" key="Vcs.Push.Dialog.v2" timestamp="1579144551225">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="447" y="183" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1577621766693" />
-    <state x="557" y="286" key="com.intellij.ide.util.TipDialog" timestamp="1579143155325">
+    <state x="447" y="183" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1579144551225" />
+    <state x="557" y="286" key="com.intellij.ide.util.TipDialog" timestamp="1579663134711">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="557" y="286" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1579143155325" />
+    <state x="557" y="286" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1579663134711" />
     <state x="516" y="196" width="672" height="678" key="search.everywhere.popup" timestamp="1577592697794">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
