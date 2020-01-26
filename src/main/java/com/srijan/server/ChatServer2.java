@@ -7,6 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
+
 public class ChatServer2 {
 
     public void chatServer() throws Exception{
